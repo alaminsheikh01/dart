@@ -21,4 +21,8 @@ void main() {
   dynamic mySomething = 5;
   mySomething = 'Hello';
   mySomething = true;
+  final test =
+      'Hello final'; // you will can't change or override value with test variable. test variable used only once.
+  print(test);
+  final String demo = "Hello";
 }
