@@ -22,4 +22,18 @@ void main() {
       print("something wrong");
       break;
   }
+
+  // for loop
+  for (int i = 0; i < 10; i++) {
+    print(i);
+  }
+
+  bool condition = false;
+  while (condition) {
+    print("while loop");
+  }
+
+  do {
+    print("do while loop");
+  } while (false);
 }
