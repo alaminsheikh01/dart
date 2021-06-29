@@ -1,18 +1,25 @@
 void main() {
-  int result;
-  double resultDouble = 5 / 5; // output should be double
-  result = 5 ~/ 5; // output should be integer
+  final myInteger = 5;
 
-  int x = 5;
-  x++; // 6
-  x--; // 5
-  x = x + 5; // 10
+  if (myInteger == 10) {
+    print("'It's ten!");
+  } else if (myInteger == 9) {
+    print("it's nine!");
+  } else if (myInteger > 20) {
+    print("Greater than twenty!");
+  } else {
+    print("Oh, its something else.");
+  }
 
-  bool isBool = 5 == 5;
-  print(isBool); // will return "true" or "false"
-
-  //String myString = "Hello " + isBool.toString(); // normal method
-  //String myString = 'Hello $isBool'; // this is called string interpolution
-  String myString = 'Hello ${10 + 20}'; // this is called string interpolution
-  print(myString);
+  switch (myInteger) {
+    case 10:
+      print("it's ten!");
+      break;
+    case 9:
+      print("it's nine!");
+      break;
+    default:
+      print("something wrong");
+      break;
+  }
 }
