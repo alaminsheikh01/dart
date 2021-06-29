@@ -1,39 +1,17 @@
 void main() {
-  final myInteger = 5;
-
-  if (myInteger == 10) {
-    print("'It's ten!");
-  } else if (myInteger == 9) {
-    print("it's nine!");
-  } else if (myInteger > 20) {
-    print("Greater than twenty!");
-  } else {
-    print("Oh, its something else.");
+  String returnStringNested() {
+    return 'hello inside';
   }
 
-  switch (myInteger) {
-    case 10:
-      print("it's ten!");
-      break;
-    case 9:
-      print("it's nine!");
-      break;
-    default:
-      print("something wrong");
-      break;
-  }
+  print(returnStringNested());
+  print(returnString());
+}
 
-  // for loop
-  for (int i = 0; i < 10; i++) {
-    print(i);
-  }
+String returnString() {
+  return 'hello outside';
+}
 
-  bool condition = false;
-  while (condition) {
-    print("while loop");
-  }
-
-  do {
-    print("do while loop");
-  } while (false);
+void otherFunction() {
+  returnString();
+  // returnStringNested(); // we cann't have this function out of box.
 }
